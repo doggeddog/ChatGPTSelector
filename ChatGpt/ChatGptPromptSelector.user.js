@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ChatGPT Prompt Selector
 // @namespace    https://github.com/doggeddog/ChatGPTSelector
-// @version      0.1.4
+// @version      0.2.2
 // @description  Allows to easily select a prompt from a prepared dataset.
 // @author       Michal Jakubec
 // @updateURL    https://github.com/doggeddog/ChatGPTSelector/raw/main/ChatGpt/ChatGptPromptSelector.user.js
@@ -22,12 +22,12 @@
 
   const categoryDropdownName = 'chatgpt-prompt-selector-category';
   const subcategoryDropdownName = 'chatgpt-prompt-selector-subcategory';
-  const categoryDropdownPlaceholder = '[vyberte režim]';
-  const subcategoryDropdownPlaceholder = '[vyberte téma]';
+  const categoryDropdownPlaceholder = '[category]';
+  const subcategoryDropdownPlaceholder = '[prompt]';
 
-  const categoryDropdownWidthInPixels = 250;
+  const categoryDropdownWidthInPixels = 100;
   const subcategoryDropdownWidthInPixels = 300;
-  const defaultEntryHeightInPixels = 24;
+  const defaultEntryHeightInPixels = 20;
 
   const checkMarkupPeriodInMilliseconds = 500;
   const entryHeightResetDelayInMilliseconds = 500;
@@ -41,7 +41,7 @@
 
   const newLine = '\r\n';
 
-  const dataUrl = 'https://github.com/doggeddog/ChatGPTSelector/raw/main/ChatGpt/Chinese.json'
+  const dataUrl = 'https://github.com/doggeddog/ChatGPTSelector/raw/main/ChatGpt/English.json'
   const dataLoadErrorMessage = "ChatGPT Prompt Selector Error: Failed to download JSON dataset. Operation halted.";
 
   var items = null;
@@ -146,7 +146,7 @@
       return;
 
     createDropdown(selector, categoryDropdownName, categoryDropdownPlaceholder, categoryDropdownWidthInPixels, items);
-
+    createDropdown(selector, subcategoryDropdownName, subcategoryDropdownPlaceholder, subcategoryDropdownWidthInPixels, []);
     const categoryDropdown = lookupCategoryDropdown();
     categoryDropdown.change(onCategoryChange);
   }
