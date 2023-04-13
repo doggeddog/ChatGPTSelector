@@ -18,7 +18,7 @@
 // @grant        GM_xmlhttpRequest
 // ==/UserScript==
 
-(function() {
+(function () {
   'use strict';
 
   const categoryDropdownName = 'chatgpt-prompt-selector-category';
@@ -47,19 +47,16 @@
 
   var items = null;
 
-  function placeholder(name)
-  {
+  function placeholder(name) {
     return '{{name}}'.replace('name', name);
   }
 
-  function createDropdown(parent, name, defaultOptionTitle, widthInPixels, items)
-  {
+  function createDropdown(parent, name, defaultOptionTitle, widthInPixels, items) {
     var markup = selectStartTagTemplate.replace(placeholder('id'), name).replace(placeholder('width'), widthInPixels);
 
     markup += optionTagTemplate.replace(placeholder('value'), '').replace(placeholder('title'), defaultOptionTitle);
 
-    for (const item of items)
-    {
+    for (const item of items) {
       const title = item.title;
       const mark = item.mark;
       markup += optionTagTemplate.replace(placeholder('value'), mark).replace(placeholder('title'), title);
@@ -68,20 +65,20 @@
     markup += selectEndTagTemplate;
 
     parent.append(markup);
+    if (name == categoryDropdownName) {
+
+    }
   }
 
-  function lookupCategoryDropdown()
-  {
+  function lookupCategoryDropdown() {
     return $('#' + categoryDropdownName);
   }
 
-  function lookupSubcategoryDropdown()
-  {
+  function lookupSubcategoryDropdown() {
     return $('#' + subcategoryDropdownName);
   }
 
-  function onSubcategoryChange()
-  {
+  function onSubcategoryChange() {
     const categoryDropdown = lookupCategoryDropdown();
     const categoryMark = categoryDropdown.val();
     const categoryItem = items.find(i => i.mark === categoryMark);
@@ -113,8 +110,7 @@
     });
   }
 
-  function onCategoryChange()
-  {
+  function onCategoryChange() {
     const categoryMark = $(this).val();
 
     console.log(categoryMark);
@@ -134,13 +130,11 @@
     dropdown.change(onSubcategoryChange);
   }
 
-  function lookupContainer()
-  {
+  function lookupContainer() {
     return $(containerSelectorQuery);
   }
 
-  function checkMarkup()
-  {
+  function checkMarkup() {
     const selector = lookupContainer();
 
     if (selector.has('select').length > 0)
@@ -150,20 +144,18 @@
     createDropdown(selector, subcategoryDropdownName, subcategoryDropdownPlaceholder, subcategoryDropdownWidthInPixels, []);
     const categoryDropdown = lookupCategoryDropdown();
     categoryDropdown.change(onCategoryChange);
+    categoryDropdown.val("ai").trigger("change");
   }
 
-  function activateCheckTimer()
-  {
+  function activateCheckTimer() {
     setInterval(checkMarkup, checkMarkupPeriodInMilliseconds);
   }
 
-  function assignReceivedData(jsonText)
-  {
+  function assignReceivedData(jsonText) {
     items = JSON.parse(jsonText);
   }
 
-  function loadData()
-  {
+  function loadData() {
     GM_xmlhttpRequest({
       method: "GET",
       url: dataUrl,
