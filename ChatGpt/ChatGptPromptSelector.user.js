@@ -12,6 +12,7 @@
 // @match        https://chat.openai.com/chat/*
 // @match        https://chat.openai.com/chat?*
 // @match        https://waaao.com/*
+// @run-at       document-start
 // @noframes
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        GM_xmlhttpRequest
@@ -89,7 +90,7 @@
       return;
 
     const subcategoryMark = $(this).val();
-    const subcategoryItem = categoryItem.items.find(i => i.title === subcategoryMark);
+    const subcategoryItem = categoryItem.items.find(i => i.mark === subcategoryMark);
 
     if (subcategoryItem == null)
       return;
