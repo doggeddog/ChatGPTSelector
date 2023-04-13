@@ -25,7 +25,7 @@
   const categoryDropdownPlaceholder = '[category]';
   const subcategoryDropdownPlaceholder = '[prompt]';
 
-  const categoryDropdownWidthInPixels = 100;
+  const categoryDropdownWidthInPixels = 150;
   const subcategoryDropdownWidthInPixels = 300;
   const defaultEntryHeightInPixels = 20;
 
@@ -41,7 +41,7 @@
 
   const newLine = '\r\n';
 
-  const dataUrl = 'https://github.com/doggeddog/ChatGPTSelector/raw/main/ChatGpt/English.json'
+  const dataUrl = 'https://github.com/doggeddog/ChatGPTSelector/raw/main/ChatGpt/mix.json'
   const dataLoadErrorMessage = "ChatGPT Prompt Selector Error: Failed to download JSON dataset. Operation halted.";
 
   var items = null;
@@ -89,7 +89,7 @@
       return;
 
     const subcategoryMark = $(this).val();
-    const subcategoryItem = categoryItem.items.find(i => i.mark === subcategoryMark);
+    const subcategoryItem = categoryItem.items.find(i => i.title === subcategoryMark);
 
     if (subcategoryItem == null)
       return;
