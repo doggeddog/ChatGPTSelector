@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         ChatGPT Prompt Selector
-// @namespace    https://github.com/doggeddog/UserScripts
+// @namespace    https://github.com/doggeddog/ChatGPTSelector
 // @version      0.1.4
 // @description  Allows to easily select a prompt from a prepared dataset.
 // @author       Michal Jakubec
-// @updateURL    https://github.com/doggeddog/UserScripts/raw/main/ChatGpt/ChatGptPromptSelector.user.js
-// @downloadURL  https://github.com/doggeddog/UserScripts/raw/main/ChatGpt/ChatGptPromptSelector.user.js
+// @updateURL    https://github.com/doggeddog/ChatGPTSelector/raw/main/ChatGpt/ChatGptPromptSelector.user.js
+// @downloadURL  https://github.com/doggeddog/ChatGPTSelector/raw/main/ChatGpt/ChatGptPromptSelector.user.js
 // @require      https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.4.min.js#sha256=a0fe8723dcf55da64d06b25446d0a8513e52527c45afcb37073465f9c6f352af
 // @require      https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.4/FileSaver.min.js#sha256=1433b8feb185bd8e81db7d2d1ea7330140531b72158300f8e26c98df1e853b21
 // @match        https://chat.openai.com/chat
@@ -41,7 +41,7 @@
 
   const newLine = '\r\n';
 
-  const dataUrl = 'https://github.com/doggeddog/UserScripts/raw/main/ChatGpt/Chinese.json'
+  const dataUrl = 'https://github.com/doggeddog/ChatGPTSelector/raw/main/ChatGpt/Chinese.json'
   const dataLoadErrorMessage = "ChatGPT Prompt Selector Error: Failed to download JSON dataset. Operation halted.";
 
   var items = null;
