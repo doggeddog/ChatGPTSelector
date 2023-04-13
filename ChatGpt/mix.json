@@ -2,7 +2,7 @@
   {
     "title": "favorite",
     "mark": "favorite",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "英语翻译或修改[en]",
@@ -69,7 +69,7 @@
   {
     "title": "language",
     "mark": "language",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "英语翻译或修改[en]",
@@ -196,7 +196,7 @@
   {
     "title": "write",
     "mark": "write",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "写作助理[en]",
@@ -303,7 +303,7 @@
   {
     "title": "article",
     "mark": "article",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "论文式回答[en]",
@@ -410,7 +410,7 @@
   {
     "title": "ai",
     "mark": "ai",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "提示词生成器[en]",
@@ -487,7 +487,7 @@
   {
     "title": "comments",
     "mark": "comments",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "新闻评论[en]",
@@ -564,7 +564,7 @@
   {
     "title": "text",
     "mark": "text",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "同义词[en]",
@@ -651,7 +651,7 @@
   {
     "title": "seo",
     "mark": "seo",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "页面 description[en]",
@@ -698,7 +698,7 @@
   {
     "title": "life",
     "mark": "life",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "生活自助百科[en]",
@@ -765,7 +765,7 @@
   {
     "title": "interesting",
     "mark": "interesting",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "解梦[en]",
@@ -842,7 +842,7 @@
   {
     "title": "living",
     "mark": "living",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "瑜伽师[en]",
@@ -929,7 +929,7 @@
   {
     "title": "speech",
     "mark": "speech",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "辩手[en]",
@@ -996,7 +996,7 @@
   {
     "title": "mind",
     "mark": "mind",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "辩手[en]",
@@ -1073,7 +1073,7 @@
   {
     "title": "social",
     "mark": "social",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "生活教练[en]",
@@ -1140,7 +1140,7 @@
   {
     "title": "philosophy",
     "mark": "philosophy",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "哲学教师[en]",
@@ -1207,7 +1207,7 @@
   {
     "title": "teacher",
     "mark": "teacher",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "数学老师[en]",
@@ -1304,7 +1304,7 @@
   {
     "title": "code",
     "mark": "code",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "IT 编程问题[en]",
@@ -1471,7 +1471,7 @@
   {
     "title": "interpreter",
     "mark": "interpreter",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "Python 解释器[en]",
@@ -1538,7 +1538,7 @@
   {
     "title": "games",
     "mark": "games",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "五子棋[en]",
@@ -1595,7 +1595,7 @@
   {
     "title": "tool",
     "mark": "tool",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "旅游指南[en]",
@@ -1712,7 +1712,7 @@
   {
     "title": "company",
     "mark": "company",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "CEO[en]",
@@ -1849,7 +1849,7 @@
   {
     "title": "doctor",
     "mark": "doctor",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "虚拟医生[en]",
@@ -1916,7 +1916,7 @@
   {
     "title": "finance",
     "mark": "finance",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "会计师[en]",
@@ -1953,7 +1953,7 @@
   {
     "title": "music",
     "mark": "music",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "作曲家[en]",
@@ -2000,7 +2000,7 @@
   {
     "title": "professional",
     "mark": "professional",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "足球解说[en]",
@@ -2097,7 +2097,7 @@
   {
     "title": "contribute",
     "mark": "contribute",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "代码释义器[en]",
@@ -2244,7 +2244,7 @@
   {
     "title": "personal",
     "mark": "personal",
-    "prompt": "",
+    "prompt": "{{prompt}}",
     "items": [
       {
         "title": "阅读空气[en]",
