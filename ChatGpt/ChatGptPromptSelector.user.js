@@ -64,9 +64,10 @@
 
     markup += selectEndTagTemplate;
 
-    parent.append(markup);
     if (name == categoryDropdownName) {
-
+        parent.prepend(markup);
+    } else {
+        lookupCategoryDropdown().after(markup);
     }
   }
 
@@ -144,7 +145,7 @@
     createDropdown(selector, subcategoryDropdownName, subcategoryDropdownPlaceholder, subcategoryDropdownWidthInPixels, []);
     const categoryDropdown = lookupCategoryDropdown();
     categoryDropdown.change(onCategoryChange);
-    categoryDropdown.val("ai").trigger("change");
+    categoryDropdown.val("favorite").trigger("change");
   }
 
   function activateCheckTimer() {
@@ -169,5 +170,6 @@
     });
   }
 
+  console.log("start loadData");
   loadData();
 })();
