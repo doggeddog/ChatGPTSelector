@@ -26,8 +26,8 @@
   const categoryDropdownPlaceholder = '[category]';
   const subcategoryDropdownPlaceholder = '[prompt]';
 
-  const categoryDropdownWidthInPixels = 150;
-  const subcategoryDropdownWidthInPixels = 300;
+  const categoryDropdownWidthInPixels = 200;
+  const subcategoryDropdownWidthInPixels = 200;
   const defaultEntryHeightInPixels = 20;
 
   const checkMarkupPeriodInMilliseconds = 500;
